@@ -27,4 +27,4 @@ jobs:
           blackduck_reports_sarif_groupSCAIssues: true
           blackduck_reports_sarif_severities: 'CRITICAL,HIGH'
           blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/tmp'
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
