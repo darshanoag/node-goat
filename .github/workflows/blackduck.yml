@@ -20,9 +20,9 @@ jobs:
           DETECT_CODE_LOCATION_NAME: ${{ github.event.repository.name }}-${{ github.ref_name }}
         with:
           synopsys_bridge_download_url: https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-bridge/latest/synopsys-bridge-macos_arm.zip
-          BlaCkDucK_UrL: ${{ secrets.BLACKDUCK_URL }}
-          BlaCkdUck_aPITokEn: ${{ secrets.BLACKDUCK_API_TOKEN }}
+          blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          blackduck_token: ${{ secrets.BLACKDUCK_API_TOKEN }}
           blackduck_reports_sarif_create: true
-          upload_sarif_result: true
+          upload_blackduck_sarif_result: true
           # reports_sarif_file_path: '/Users/spurohit/.bridge/polaris_results.sarif.json'
           github_token: ${{ secrets.GITHUB_TOKEN }}
