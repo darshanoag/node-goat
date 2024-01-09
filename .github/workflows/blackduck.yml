@@ -24,5 +24,7 @@ jobs:
           blackduck_token: ${{ secrets.BLACKDUCK_API_TOKEN }}
           blackduck_reports_sarif_create: true
           upload_blackduck_sarif_result: true
-          # reports_sarif_file_path: '/Users/spurohit/.bridge/polaris_results.sarif.json'
+          blackduck_reports_sarif_groupSCAIssues: true
+          blackduck.reports.sarif.severities: 'CRITICAL,HIGH'
+          blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/sarif-test-report.sarif.json'
           github_token: ${{ secrets.GITHUB_TOKEN }}
