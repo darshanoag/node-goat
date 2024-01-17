@@ -23,9 +23,10 @@ jobs:
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_token: ${{ secrets.BLACKDUCK_API_TOKEN }}
           blackduck_reports_sarif_create: true
-          upload_blackduck_sarif_report: true
-          blackduck_reports_sarif_groupSCAIssues: true
-          blackduck_reports_sarif_severities: 'CRITICAL,HIGH'
+          include_diagnostics: true
+          # upload_blackduck_sarif_report: true
+          # blackduck_reports_sarif_groupSCAIssues: true
+          # blackduck_reports_sarif_severities: 'CRITICAL,HIGH'
           # blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/tmp'
           # github_token: ${{ secrets.GITHUB_TOKEN }}
-          github_token: 'sdddds'
+          # github_token: 'sdddds'
