@@ -21,5 +21,5 @@ jobs:
           synopsys_bridge_download_url: https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-bridge/latest/synopsys-bridge-macos_arm.zip
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_token: ${{ secrets.BLACKDUCK_API_TOKEN }}
-          blackduck_reports_sarif_create: true
+          # blackduck_reports_sarif_create: true
           include_diagnostics: true
