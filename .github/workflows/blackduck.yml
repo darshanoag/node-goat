@@ -22,11 +22,9 @@ jobs:
           synopsys_bridge_download_url: https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-bridge/latest/synopsys-bridge-macos_arm.zip
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_token: ${{ secrets.BLACKDUCK_API_TOKEN }}
-          blackduck_reports_sarif_create: true
-          # include_diagnostics: true
-          blackduck_upload_sarif_report: true
-          blackduck_reports_sarif_groupSCAIssues: true
+          blackduck_reports_sarif_create: true # Create Black Duck sarif report and upload it as artifact
+          blackduck_upload_sarif_report: true  # Upload Black Duck sarif report in GitHub Advanced Security tab
+          # blackduck_reports_sarif_groupSCAIssues: true # by default true
           blackduck_reports_sarif_severities: 'CRITICAL,HIGH'
-          # blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/tmp'
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # github_token: 'sdddds'
+          # blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/tmp' # File path including file name where SARIF report should be created(need to include file name as well)
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Mandatory if blackduck_upload_sarif_report is set as true
