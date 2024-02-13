@@ -26,5 +26,5 @@ jobs:
           # blackduck_upload_sarif_report: true  # Upload Black Duck sarif report in GitHub Advanced Security tab
           # blackduck_reports_sarif_groupSCAIssues: true # by default true
           blackduck_reports_sarif_severities: 'CRITICAL,HIGH'
-          # blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/tmp' # File path including file name where SARIF report should be created(need to include file name as well)
+          blackduck_reports_sarif_file_path: '/Users/spurohit/code/github/tmp' # File path including file name where SARIF report should be created(need to include file name as well)
           github_token: ${{ secrets.GITHUB_TOKEN }} # Mandatory if blackduck_upload_sarif_report is set as true
